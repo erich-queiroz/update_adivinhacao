@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: #77767c;
+    text-align: center;
+    color: #bfc9ff;
+}
+#containerTotal {
+    margin: 30px auto;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 10px;   
+}
+h1 {
+    color: #c0e2ed;
+}
+h1, h4 {
+    padding: 12px;
+}
+#main_titulos {
+    height: 18vw;
+    margin: auto;
+    background-color: #181934;
+    border-radius: 15px;
+    transition: 1s;
+    border: 1px solid #bfc9ff;
+    padding: 20px;
+}
+#labelPalpite {
+    padding: 10px;
+}
+#resultadoChute {
+    margin: 5px;
+    display: block;
+}
+#inputPalpite {
+    background-color: #e2e2e2;
+    margin: 10px;
+    
+}
+#inputPalpite, #btn {
+    padding: 6px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+#btn {
+   background-color: #1763a4;
+   cursor: pointer;
+   color: #e2e2e2;
+   margin: 7px;
+   padding: 10px;
+}
