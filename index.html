@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
-    <title>Jogo Adivinhação!</title>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/folhaestilo.css" media="screen"/>
-    </head>
-
-    <body>
-        <div id="fundo">
-            </div> 
-        <script type="text/javascript" src="js/js.js"></script>
-    </body>
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação!</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="containerTotal">
+    <main id="main_titulos">
+        <h1>Jogo de adivinhação</h1>
+        <h4>Adivinhe um número de 0 a 10!</h4>
+        <div id="form">
+            <label id="labelPalpite" for="palpite">Digite seu palpite:</label><br>
+            <input id="inputPalpite" name="palpite" type="number" autofocus><br>
+            <input id="btn" type="button" value="Enviar" onclick="pensarNumero()">
+            <span id="resultadoChute"></span>
+            </div>
+    </main>    
+</div>
+</body>
 </html>
