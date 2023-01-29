@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: #DEEFE7;
+    color: #CEF09D;
+    text-align: center;
+}  
+header, footer {
+    background-color: #201f1f;
+    padding: 2em;
+    font-size: 20px;
+    border-bottom: 1px solid #cdd2d5;    
+}
+h1 {
+    padding: 20px;       
+}  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}  
+nav li {
+    margin: 0 1em;    
+}  
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('https://source.unsplash.com/random/');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(0, 35, 51, 0.70);
+    padding: 1em;
+    margin: 2em;
+    text-align: left;
+    border-radius: 10px;
+    color: #DEEFE7;
+    box-shadow: 15px 5px 35px -14px rgba(0,0,0,0.96);
+    border: 1px solid #A0CD60;
+}
+#section3 {
+    text-align: center;
+}
+.titulos {
+    color: #F2AE30;
+    padding: 10px;
+    text-align: center;
+}
+.subtitulos {
+    padding: 10px;
+    text-align: justify;
+}
+i {
+    color: #D92525;
+}
+#iconeRedeSocial {
+    font-size: 60px;
+}
+input[type="number"] {
+    padding: 10px;
+    margin: 20px 0px;
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    background-color: rgba(8, 144, 208, 0.2);
+    box-shadow: 15px 5px 35px -14px rgba(0,0,0,0.96);
+    outline: none;
+    color: white;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+}
+#btn {
+    padding: 12px;
+    margin: 20px 0px;
+    background-color: #D92525;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 15px 5px 35px -14px rgba(0,0,0,0.96);
+}
+#pResultado {
+    display: block;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+#resultadoTentativas {
+    font-size: 20px;
+}
+@media (max-width: 600px) {
+    section {
+    width: 90%;
+    margin: 0.5em;
+    }
+}
+@media (max-width: 600px) {
+    main {
+    background-position: center;
+    }
+}
+@media (max-width: 400px) {
+    header, footer {
+    font-size: 16px;
+    }
+}

@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/2e6a0c5dce.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo de adivinhação feito com HTML, CSS e Javascript">
+    <meta name="author" content="Erich Queiroz">
     <title>Jogo de adivinhação!</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/script.js"></script>
-</head>
-<body>
-    <div id="containerTotal">
-    <main id="main_titulos">
-        <h1>Jogo de adivinhação</h1>
-        <h4>Adivinhe um número de 0 a 10!</h4>
-        <div id="form">
-            <label id="labelPalpite" for="palpite">Digite seu palpite:</label><br>
-            <input id="inputPalpite" name="palpite" type="number" autofocus><br>
-            <input id="btn" type="button" value="Enviar" onclick="pensarNumero()">
-            <span id="resultadoChute"></span>
-            </div>
-    </main>    
-</div>
-</body>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1>Adivinhe um número!</h1>
+    </header>
+    <main>
+      <section id="section1">
+        <h2 class="titulos"><i class="fa-solid fa-bullseye"></i> Overview</h2>
+        <p class="subtitulos">Este código é um estudo de caso para o desenvolvimento web.<br/> Ele aborda conceitos importantes como manipulação do DOM (Document Object Model) e eventos JavaScript.<br/> Além disso, também é possível ver a utilização de variáveis, funções, condicionais e lógica de programação. Este código é uma referência para a interação entre JavaScript e HTML.</p>
+      </section>
+      <section id="section2">
+        <h2 class="titulos"><i class="fa-solid fa-circle-info"></i> Instruções</h2>
+        <p class="subtitulos">O objetivo do jogo é adivinhar um número entre 1 e 10 gerado aleatoriamente pelo código.<br/> Você tem 10 tentativas para adivinhar o número correto.<br/>Para fazer sua tentativa, insira o número que você acha que é o correto no campo de entrada.<br/>Pressione a tecla "Enter" ou clique no botão "Tentar adivinhar" para enviar sua tentativa.</p>
+        <p class="subtitulos">Boa sorte!</p>
+      </section>
+      <section id="section3">
+        <h2 class="titulos"><i class="fa-sharp fa-solid fa-hashtag"></i> Adivinhe um número de 0 a 10!</h2>
+            <label id="labelPalpite" for="palpite" class="subtitulos palpite">Digite seu palpite:</label><br>
+            <input id="inputPalpite" name="palpite" type="number" data-type="number" autofocus><br>
+            <input id="btn" type="button" value="Enviar">  
+            <span id="pResultado"></span>
+            <p id="resultadoTentativas"></p>
+      </section>      
+    </main>
+    <footer>
+      <span>Desenvolvido e desenhado por Erich Queiroz</span>
+      <nav>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/erich-queiroz/" id="iconeRedeSocial" target="_blank" ><i class="fa-brands fa-linkedin" ></i></a></li>
+          <li><a href="https://github.com/erich-queiroz" id="iconeRedeSocial" target="_blank"><i class="fa-brands fa-github"></i></a></li>          
+        </ul>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
